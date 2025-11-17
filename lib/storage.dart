@@ -3,15 +3,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:path/path.dart' as p;
 
-/*
-زبط الروابط حط روابطك
-و زبط الاعدادات بالموقع اول
-هذا من محاضرة
-30.5
-عند 
-2:19:00
-تقريبا
-*/
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Supabase.initialize(
