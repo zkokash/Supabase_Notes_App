@@ -1,16 +1,37 @@
-# flutter_application_6
+# Supabase Notes App
 
-A new Flutter project.
+A Flutter notes application demonstrating CRUD operations with Supabase, plus file and storage integration.
+
+## Features
+- Create, edit, and delete notes
+- Supabase database integration
+- Supabase Storage / file-picker integration
+- Flutter Material UI
+
+## Tech Stack
+- Flutter & Dart
+- Supabase
+- `supabase_flutter`
+- `file_picker`
 
 ## Getting Started
+```bash
+flutter pub get
+flutter run
+```
 
-This project is a starting point for a Flutter application.
+Configure your Supabase project before running the app. Do not commit private service-role credentials.
 
-A few resources to get you started if this is your first Flutter project:
+## Project Structure
+```text
+lib/
+├── main.dart
+├── auth1.dart
+└── storage.dart
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Security
+The client uses Supabase's publishable/anon key model. Production deployments should enforce Row Level Security (RLS) and appropriate database policies. Never expose a Supabase service-role key in a Flutter client.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Purpose
+An intentionally small project for demonstrating Flutter + Supabase integration and cloud-backed CRUD workflows.
